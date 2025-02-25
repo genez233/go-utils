@@ -15,7 +15,7 @@ func main() {
 		ConsoleLog:       true,
 		IsUpload:         true,
 		LogUrl:           "http://your.domain.com/api/default/%s/_json",
-		OpenobserveToken: "token",
+		OpenobserveToken: "your_openobserve_token",
 	})
 
 	log.Debug("this is a log.", "v1.0.0", true, 2, glog.Config{
@@ -24,6 +24,6 @@ func main() {
 		ConsoleLog:       true,
 		IsUpload:         true,
 		LogUrl:           "http://your.domain.com/api/default/%s/_json",
-		OpenobserveToken: "token",
+		OpenobserveToken: "your_openobserve_token",
 	})
 }
