@@ -8,6 +8,8 @@
 ### `glog`
 `glog`是一个用于日志记录和上传的 Go 语言包，支持将日志信息打印到控制台，并可选择将日志上传到指定的 OpenObserve 服务。它提供了不同级别的日志记录方法，如 `Info`、`Debug`、`Warn` 和 `Error`，方便在不同场景下使用。
 
+### `gen`
+`gen`是一个用于生成数据库表实体的 Go 语言包，目前仅支持使用`*gorm.DB`的数据库连接实例。
 ## 三、安装
 
 ### 前提条件
@@ -57,6 +59,12 @@ config := &glog.Config{
 
 ```go
 logger := glog.New(config)
+```
+
+#### `gen`
+```go
+
+gen.GenEntity("path/to/your/model", db)
 ```
 
 ### 4. 功能介绍
